@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     let chapterList: [Chapter] = [
         Chapter(title: "Chapter1", subTitle: "HelloTriangle", storyBoardName: "HelloTriangle"),
-        Chapter(title: "Chapter2", subTitle: "HelloTriangleColor", storyBoardName: "HelloTriangleColor")
+        Chapter(title: "Chapter2", subTitle: "HelloTriangleColor", storyBoardName: "HelloTriangleColor"),
+        Chapter(title: "Chapter3", subTitle: "HelloTriangleAdvanceColor", storyBoardName: "HelloTriangleAdvanceColor")
     ]
     
 }

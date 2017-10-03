@@ -4,3 +4,4 @@
 
 #import "HelloTriangleEngineWrapper.h"
 #import "HelloTriangleColorEngineWrapper.h"
+#import "HelloTriangleAdvanceColorEngineWrapper.h"
