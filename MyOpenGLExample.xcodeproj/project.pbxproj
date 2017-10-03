@@ -23,6 +23,13 @@
 		600057A71F83A8DF00A1421A /* AssetsManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 600057A51F83A8DF00A1421A /* AssetsManager.mm */; };
 		600057AC1F83AAD700A1421A /* HelloTriangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = 600057AB1F83AAD700A1421A /* HelloTriangle.vs */; };
 		600057AE1F83AB0900A1421A /* HelloTriangle.fs in Resources */ = {isa = PBXBuildFile; fileRef = 600057AD1F83AB0900A1421A /* HelloTriangle.fs */; };
+		600057CB1F83B41F00A1421A /* HelloTriangleColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600057C51F83B41E00A1421A /* HelloTriangleColorViewController.swift */; };
+		600057CD1F83B41F00A1421A /* HelloTriangleColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600057C91F83B41F00A1421A /* HelloTriangleColor.storyboard */; };
+		600057D51F83B49100A1421A /* HelloTriangleColorEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 600057D21F83B49100A1421A /* HelloTriangleColorEngine.cpp */; };
+		600057D61F83B49100A1421A /* HelloTriangleColorEngineWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 600057D41F83B49100A1421A /* HelloTriangleColorEngineWrapper.mm */; };
+		600057DC1F83B4C200A1421A /* HelloTriangleColorGLES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 600057DA1F83B4C200A1421A /* HelloTriangleColorGLES.cpp */; };
+		600057DF1F83B57300A1421A /* HelloTriangleColor.fs in Resources */ = {isa = PBXBuildFile; fileRef = 600057DD1F83B57200A1421A /* HelloTriangleColor.fs */; };
+		600057E01F83B57300A1421A /* HelloTriangleColor.vs in Resources */ = {isa = PBXBuildFile; fileRef = 600057DE1F83B57300A1421A /* HelloTriangleColor.vs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +58,16 @@
 		600057A91F83A90200A1421A /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		600057AB1F83AAD700A1421A /* HelloTriangle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HelloTriangle.vs; sourceTree = "<group>"; };
 		600057AD1F83AB0900A1421A /* HelloTriangle.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HelloTriangle.fs; sourceTree = "<group>"; };
+		600057C51F83B41E00A1421A /* HelloTriangleColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelloTriangleColorViewController.swift; path = MyOpenGLExample/Chapter/2_HelloTriangleColor/HelloTriangleColorViewController.swift; sourceTree = SOURCE_ROOT; };
+		600057C91F83B41F00A1421A /* HelloTriangleColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HelloTriangleColor.storyboard; path = MyOpenGLExample/Chapter/2_HelloTriangleColor/HelloTriangleColor.storyboard; sourceTree = SOURCE_ROOT; };
+		600057D11F83B49100A1421A /* HelloTriangleColorEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleColorEngine.hpp; sourceTree = "<group>"; };
+		600057D21F83B49100A1421A /* HelloTriangleColorEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleColorEngine.cpp; sourceTree = "<group>"; };
+		600057D31F83B49100A1421A /* HelloTriangleColorEngineWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTriangleColorEngineWrapper.h; sourceTree = "<group>"; };
+		600057D41F83B49100A1421A /* HelloTriangleColorEngineWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloTriangleColorEngineWrapper.mm; sourceTree = "<group>"; };
+		600057DA1F83B4C200A1421A /* HelloTriangleColorGLES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleColorGLES.cpp; sourceTree = "<group>"; };
+		600057DB1F83B4C200A1421A /* HelloTriangleColorGLES.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleColorGLES.hpp; sourceTree = "<group>"; };
+		600057DD1F83B57200A1421A /* HelloTriangleColor.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = HelloTriangleColor.fs; sourceTree = "<group>"; };
+		600057DE1F83B57300A1421A /* HelloTriangleColor.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = HelloTriangleColor.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				6000576E1F81694A00A1421A /* 1_HelloTriangle */,
+				600057AF1F83B16300A1421A /* 2_HelloTriangleColor */,
 			);
 			path = Chapter;
 			sourceTree = "<group>";
@@ -200,6 +218,55 @@
 			path = Shader;
 			sourceTree = "<group>";
 		};
+		600057AF1F83B16300A1421A /* 2_HelloTriangleColor */ = {
+			isa = PBXGroup;
+			children = (
+				600057D01F83B47A00A1421A /* Editor */,
+				600057C91F83B41F00A1421A /* HelloTriangleColor.storyboard */,
+				600057C51F83B41E00A1421A /* HelloTriangleColorViewController.swift */,
+			);
+			path = 2_HelloTriangleColor;
+			sourceTree = "<group>";
+		};
+		600057D01F83B47A00A1421A /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				600057D71F83B49900A1421A /* Shader */,
+				600057D81F83B4A600A1421A /* Util */,
+				600057D21F83B49100A1421A /* HelloTriangleColorEngine.cpp */,
+				600057D11F83B49100A1421A /* HelloTriangleColorEngine.hpp */,
+				600057D31F83B49100A1421A /* HelloTriangleColorEngineWrapper.h */,
+				600057D41F83B49100A1421A /* HelloTriangleColorEngineWrapper.mm */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		600057D71F83B49900A1421A /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				600057DE1F83B57300A1421A /* HelloTriangleColor.vs */,
+				600057DD1F83B57200A1421A /* HelloTriangleColor.fs */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		600057D81F83B4A600A1421A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				600057D91F83B4AE00A1421A /* GLES */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		600057D91F83B4AE00A1421A /* GLES */ = {
+			isa = PBXGroup;
+			children = (
+				600057DA1F83B4C200A1421A /* HelloTriangleColorGLES.cpp */,
+				600057DB1F83B4C200A1421A /* HelloTriangleColorGLES.hpp */,
+			);
+			path = GLES;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,10 +327,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600057E01F83B57300A1421A /* HelloTriangleColor.vs in Resources */,
 				600057661F8168FC00A1421A /* LaunchScreen.storyboard in Resources */,
+				600057CD1F83B41F00A1421A /* HelloTriangleColor.storyboard in Resources */,
 				600057AC1F83AAD700A1421A /* HelloTriangle.vs in Resources */,
 				600057721F816CC700A1421A /* HelloTriangle.storyboard in Resources */,
 				600057631F8168FC00A1421A /* Assets.xcassets in Resources */,
+				600057DF1F83B57300A1421A /* HelloTriangleColor.fs in Resources */,
 				600057611F8168FC00A1421A /* Main.storyboard in Resources */,
 				600057AE1F83AB0900A1421A /* HelloTriangle.fs in Resources */,
 			);
@@ -278,13 +348,17 @@
 			files = (
 				6000575E1F8168FC00A1421A /* ViewController.swift in Sources */,
 				600057961F839D5A00A1421A /* HelloTriangleEngineWrapper.mm in Sources */,
+				600057DC1F83B4C200A1421A /* HelloTriangleColorGLES.cpp in Sources */,
 				600057991F839EE700A1421A /* HelloTriangleEngine.cpp in Sources */,
 				6000575C1F8168FC00A1421A /* AppDelegate.swift in Sources */,
 				600057701F816A8E00A1421A /* ChapterTableViewCell.swift in Sources */,
 				600057A31F83A8BA00A1421A /* DataManager.cpp in Sources */,
+				600057D61F83B49100A1421A /* HelloTriangleColorEngineWrapper.mm in Sources */,
 				600057741F816CE800A1421A /* HelloTriangleViewController.swift in Sources */,
 				600057A71F83A8DF00A1421A /* AssetsManager.mm in Sources */,
 				6000579E1F83A7C300A1421A /* HelloTriangleGLES.cpp in Sources */,
+				600057CB1F83B41F00A1421A /* HelloTriangleColorViewController.swift in Sources */,
+				600057D51F83B49100A1421A /* HelloTriangleColorEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
