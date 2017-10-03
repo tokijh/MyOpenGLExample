@@ -15,6 +15,14 @@
 		600057701F816A8E00A1421A /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000576F1F816A8E00A1421A /* ChapterTableViewCell.swift */; };
 		600057721F816CC700A1421A /* HelloTriangle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600057711F816CC700A1421A /* HelloTriangle.storyboard */; };
 		600057741F816CE800A1421A /* HelloTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600057731F816CE700A1421A /* HelloTriangleViewController.swift */; };
+		6000577F1F8385B000A1421A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6000577E1F8385B000A1421A /* OpenGLES.framework */; };
+		600057961F839D5A00A1421A /* HelloTriangleEngineWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 600057951F839D5A00A1421A /* HelloTriangleEngineWrapper.mm */; };
+		600057991F839EE700A1421A /* HelloTriangleEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 600057971F839EE700A1421A /* HelloTriangleEngine.cpp */; };
+		6000579E1F83A7C300A1421A /* HelloTriangleGLES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6000579C1F83A7C300A1421A /* HelloTriangleGLES.cpp */; };
+		600057A31F83A8BA00A1421A /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 600057A11F83A8BA00A1421A /* DataManager.cpp */; };
+		600057A71F83A8DF00A1421A /* AssetsManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 600057A51F83A8DF00A1421A /* AssetsManager.mm */; };
+		600057AC1F83AAD700A1421A /* HelloTriangle.vs in Resources */ = {isa = PBXBuildFile; fileRef = 600057AB1F83AAD700A1421A /* HelloTriangle.vs */; };
+		600057AE1F83AB0900A1421A /* HelloTriangle.fs in Resources */ = {isa = PBXBuildFile; fileRef = 600057AD1F83AB0900A1421A /* HelloTriangle.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,21 @@
 		6000576F1F816A8E00A1421A /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
 		600057711F816CC700A1421A /* HelloTriangle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelloTriangle.storyboard; sourceTree = "<group>"; };
 		600057731F816CE700A1421A /* HelloTriangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTriangleViewController.swift; sourceTree = "<group>"; };
+		600057761F83842500A1421A /* MyOpenGLExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyOpenGLExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		6000577E1F8385B000A1421A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		600057941F839D5A00A1421A /* HelloTriangleEngineWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloTriangleEngineWrapper.h; sourceTree = "<group>"; };
+		600057951F839D5A00A1421A /* HelloTriangleEngineWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloTriangleEngineWrapper.mm; sourceTree = "<group>"; };
+		600057971F839EE700A1421A /* HelloTriangleEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleEngine.cpp; sourceTree = "<group>"; };
+		600057981F839EE700A1421A /* HelloTriangleEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleEngine.hpp; sourceTree = "<group>"; };
+		6000579C1F83A7C300A1421A /* HelloTriangleGLES.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleGLES.cpp; sourceTree = "<group>"; };
+		6000579D1F83A7C300A1421A /* HelloTriangleGLES.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleGLES.hpp; sourceTree = "<group>"; };
+		600057A11F83A8BA00A1421A /* DataManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataManager.cpp; sourceTree = "<group>"; };
+		600057A21F83A8BA00A1421A /* DataManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataManager.hpp; sourceTree = "<group>"; };
+		600057A51F83A8DF00A1421A /* AssetsManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AssetsManager.mm; sourceTree = "<group>"; };
+		600057A61F83A8DF00A1421A /* AssetsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsManager.h; sourceTree = "<group>"; };
+		600057A91F83A90200A1421A /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		600057AB1F83AAD700A1421A /* HelloTriangle.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HelloTriangle.vs; sourceTree = "<group>"; };
+		600057AD1F83AB0900A1421A /* HelloTriangle.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HelloTriangle.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6000577F1F8385B000A1421A /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +70,7 @@
 			children = (
 				6000575A1F8168FC00A1421A /* MyOpenGLExample */,
 				600057591F8168FC00A1421A /* Products */,
+				6000577D1F8385AF00A1421A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +85,9 @@
 		6000575A1F8168FC00A1421A /* MyOpenGLExample */ = {
 			isa = PBXGroup;
 			children = (
+				6000579F1F83A8A100A1421A /* Util */,
 				6000576D1F81692D00A1421A /* Chapter */,
+				600057761F83842500A1421A /* MyOpenGLExample-Bridging-Header.h */,
 				6000575B1F8168FC00A1421A /* AppDelegate.swift */,
 				6000575D1F8168FC00A1421A /* ViewController.swift */,
 				6000576F1F816A8E00A1421A /* ChapterTableViewCell.swift */,
@@ -83,10 +110,94 @@
 		6000576E1F81694A00A1421A /* 1_HelloTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				600057931F839D3A00A1421A /* Engine */,
 				600057711F816CC700A1421A /* HelloTriangle.storyboard */,
 				600057731F816CE700A1421A /* HelloTriangleViewController.swift */,
 			);
 			path = 1_HelloTriangle;
+			sourceTree = "<group>";
+		};
+		6000577D1F8385AF00A1421A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6000577E1F8385B000A1421A /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		600057931F839D3A00A1421A /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				600057AA1F83AAC600A1421A /* Shader */,
+				6000579A1F83A7AD00A1421A /* Util */,
+				600057971F839EE700A1421A /* HelloTriangleEngine.cpp */,
+				600057981F839EE700A1421A /* HelloTriangleEngine.hpp */,
+				600057941F839D5A00A1421A /* HelloTriangleEngineWrapper.h */,
+				600057951F839D5A00A1421A /* HelloTriangleEngineWrapper.mm */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		6000579A1F83A7AD00A1421A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6000579B1F83A7B400A1421A /* GLES */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6000579B1F83A7B400A1421A /* GLES */ = {
+			isa = PBXGroup;
+			children = (
+				6000579C1F83A7C300A1421A /* HelloTriangleGLES.cpp */,
+				6000579D1F83A7C300A1421A /* HelloTriangleGLES.hpp */,
+			);
+			path = GLES;
+			sourceTree = "<group>";
+		};
+		6000579F1F83A8A100A1421A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				600057A81F83A8F700A1421A /* Logger */,
+				600057A41F83A8D000A1421A /* AssetsManager */,
+				600057A01F83A8A700A1421A /* DataManager */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		600057A01F83A8A700A1421A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				600057A11F83A8BA00A1421A /* DataManager.cpp */,
+				600057A21F83A8BA00A1421A /* DataManager.hpp */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		600057A41F83A8D000A1421A /* AssetsManager */ = {
+			isa = PBXGroup;
+			children = (
+				600057A51F83A8DF00A1421A /* AssetsManager.mm */,
+				600057A61F83A8DF00A1421A /* AssetsManager.h */,
+			);
+			path = AssetsManager;
+			sourceTree = "<group>";
+		};
+		600057A81F83A8F700A1421A /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				600057A91F83A90200A1421A /* Logger.h */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		600057AA1F83AAC600A1421A /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				600057AB1F83AAD700A1421A /* HelloTriangle.vs */,
+				600057AD1F83AB0900A1421A /* HelloTriangle.fs */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +232,7 @@
 				TargetAttributes = {
 					600057571F8168FC00A1421A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -149,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				600057661F8168FC00A1421A /* LaunchScreen.storyboard in Resources */,
+				600057AC1F83AAD700A1421A /* HelloTriangle.vs in Resources */,
 				600057721F816CC700A1421A /* HelloTriangle.storyboard in Resources */,
 				600057631F8168FC00A1421A /* Assets.xcassets in Resources */,
 				600057611F8168FC00A1421A /* Main.storyboard in Resources */,
+				600057AE1F83AB0900A1421A /* HelloTriangle.fs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,9 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6000575E1F8168FC00A1421A /* ViewController.swift in Sources */,
+				600057961F839D5A00A1421A /* HelloTriangleEngineWrapper.mm in Sources */,
+				600057991F839EE700A1421A /* HelloTriangleEngine.cpp in Sources */,
 				6000575C1F8168FC00A1421A /* AppDelegate.swift in Sources */,
 				600057701F816A8E00A1421A /* ChapterTableViewCell.swift in Sources */,
+				600057A31F83A8BA00A1421A /* DataManager.cpp in Sources */,
 				600057741F816CE800A1421A /* HelloTriangleViewController.swift in Sources */,
+				600057A71F83A8DF00A1421A /* AssetsManager.mm in Sources */,
+				6000579E1F83A7C300A1421A /* HelloTriangleGLES.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +421,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46KGHHF73Q;
 				INFOPLIST_FILE = MyOpenGLExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tokijh.com.MyOpenGLExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyOpenGLExample/MyOpenGLExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,12 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46KGHHF73Q;
 				INFOPLIST_FILE = MyOpenGLExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tokijh.com.MyOpenGLExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyOpenGLExample/MyOpenGLExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

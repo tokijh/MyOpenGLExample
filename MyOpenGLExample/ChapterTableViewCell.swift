@@ -8,6 +8,8 @@
 
 import UIKit
 
+let MAX_TOUCH_COUNT: Int = 5
+
 class ChapterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!

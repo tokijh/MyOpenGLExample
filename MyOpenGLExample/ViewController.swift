@@ -37,6 +37,7 @@ extension ViewController: UITableViewDelegate {
         guard let viewController = storyboard.instantiateInitialViewController() else {
             return
         }
+//        self.present(viewController, animated: true)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
