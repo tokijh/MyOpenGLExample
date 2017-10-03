@@ -44,6 +44,13 @@
 		601A90781F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_GLES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601A90701F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_GLES.cpp */; };
 		601A90791F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A90721F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.storyboard */; };
 		601A907A1F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A90731F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_ViewController.swift */; };
+		601A90A01F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601A90931F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.cpp */; };
+		601A90A11F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 601A90961F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.mm */; };
+		601A90A21F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.fs in Resources */ = {isa = PBXBuildFile; fileRef = 601A90981F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.fs */; };
+		601A90A31F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.vs in Resources */ = {isa = PBXBuildFile; fileRef = 601A90991F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.vs */; };
+		601A90A41F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601A909C1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp */; };
+		601A90A51F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A909E1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.storyboard */; };
+		601A90A61F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A909F1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +109,16 @@
 		601A90711F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_GLES.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleAdvanceColor_MapBuffers_GLES.hpp; sourceTree = "<group>"; };
 		601A90721F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelloTriangleAdvanceColor_MapBuffers.storyboard; sourceTree = "<group>"; };
 		601A90731F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloTriangleAdvanceColor_MapBuffers_ViewController.swift; sourceTree = "<group>"; };
+		601A90931F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleAdvanceColor_VertexArrayObjects_Engine.cpp; sourceTree = "<group>"; };
+		601A90941F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleAdvanceColor_VertexArrayObjects_Engine.hpp; sourceTree = "<group>"; };
+		601A90951F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.h; sourceTree = "<group>"; };
+		601A90961F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.mm; sourceTree = "<group>"; };
+		601A90981F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = HelloTriangleAdvanceColor_VertexArrayObjects.fs; sourceTree = "<group>"; };
+		601A90991F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = HelloTriangleAdvanceColor_VertexArrayObjects.vs; sourceTree = "<group>"; };
+		601A909C1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp; sourceTree = "<group>"; };
+		601A909D1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HelloTriangleAdvanceColor_VertexArrayObjects_GLES.hpp; sourceTree = "<group>"; };
+		601A909E1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelloTriangleAdvanceColor_VertexArrayObjects.storyboard; sourceTree = "<group>"; };
+		601A909F1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +174,7 @@
 				600057AF1F83B16300A1421A /* 2_HelloTriangleColor */,
 				600057E11F83BA3800A1421A /* 3_HelloTriangleAdvanceColor */,
 				601A90651F83CC4A004718D8 /* 4_HelloTriangleAdvanceColor_MapBuffers */,
+				601A90911F83D68C004718D8 /* 5_HelloTriangleAdvanceColor_VertexArrayObjects */,
 			);
 			path = Chapter;
 			sourceTree = "<group>";
@@ -401,6 +419,55 @@
 			path = GLES;
 			sourceTree = "<group>";
 		};
+		601A90911F83D68C004718D8 /* 5_HelloTriangleAdvanceColor_VertexArrayObjects */ = {
+			isa = PBXGroup;
+			children = (
+				601A90921F83D68C004718D8 /* Engine */,
+				601A909E1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.storyboard */,
+				601A909F1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift */,
+			);
+			path = 5_HelloTriangleAdvanceColor_VertexArrayObjects;
+			sourceTree = "<group>";
+		};
+		601A90921F83D68C004718D8 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				601A90971F83D68C004718D8 /* Shader */,
+				601A909A1F83D68C004718D8 /* Util */,
+				601A90931F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.cpp */,
+				601A90941F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.hpp */,
+				601A90951F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.h */,
+				601A90961F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.mm */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		601A90971F83D68C004718D8 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				601A90981F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.fs */,
+				601A90991F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.vs */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		601A909A1F83D68C004718D8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				601A909B1F83D68C004718D8 /* GLES */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		601A909B1F83D68C004718D8 /* GLES */ = {
+			isa = PBXGroup;
+			children = (
+				601A909C1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp */,
+				601A909D1F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.hpp */,
+			);
+			path = GLES;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -464,8 +531,10 @@
 				600057E01F83B57300A1421A /* HelloTriangleColor.vs in Resources */,
 				600057E41F83BA5900A1421A /* HelloTriangleAdvanceColor.storyboard in Resources */,
 				600057661F8168FC00A1421A /* LaunchScreen.storyboard in Resources */,
+				601A90A21F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.fs in Resources */,
 				600057CD1F83B41F00A1421A /* HelloTriangleColor.storyboard in Resources */,
 				601A90771F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.vs in Resources */,
+				601A90A31F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.vs in Resources */,
 				600057AC1F83AAD700A1421A /* HelloTriangle.vs in Resources */,
 				600057721F816CC700A1421A /* HelloTriangle.storyboard in Resources */,
 				600057631F8168FC00A1421A /* Assets.xcassets in Resources */,
@@ -476,6 +545,7 @@
 				600057F61F83BAD600A1421A /* HelloTriangleAdvanceColor.fs in Resources */,
 				600057AE1F83AB0900A1421A /* HelloTriangle.fs in Resources */,
 				600057F51F83BAD600A1421A /* HelloTriangleAdvanceColor.vs in Resources */,
+				601A90A51F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +561,7 @@
 				600057EF1F83BAC500A1421A /* HelloTriangleAdvanceColorEngineWrapper.mm in Sources */,
 				600057F21F83BAD000A1421A /* HelloTriangleAdvanceColorGLES.cpp in Sources */,
 				601A90781F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_GLES.cpp in Sources */,
+				601A90A41F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp in Sources */,
 				600057DC1F83B4C200A1421A /* HelloTriangleColorGLES.cpp in Sources */,
 				600057991F839EE700A1421A /* HelloTriangleEngine.cpp in Sources */,
 				6000575C1F8168FC00A1421A /* AppDelegate.swift in Sources */,
@@ -502,10 +573,13 @@
 				600057741F816CE800A1421A /* HelloTriangleViewController.swift in Sources */,
 				600057A71F83A8DF00A1421A /* AssetsManager.mm in Sources */,
 				6000579E1F83A7C300A1421A /* HelloTriangleGLES.cpp in Sources */,
+				601A90A61F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift in Sources */,
 				600057E51F83BA5900A1421A /* HelloTriangleAdvanceColorViewController.swift in Sources */,
 				600057EE1F83BAC500A1421A /* HelloTriangleAdvanceColorEngine.cpp in Sources */,
 				600057CB1F83B41F00A1421A /* HelloTriangleColorViewController.swift in Sources */,
 				600057D51F83B49100A1421A /* HelloTriangleColorEngine.cpp in Sources */,
+				601A90A01F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_Engine.cpp in Sources */,
+				601A90A11F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.mm in Sources */,
 				601A90741F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_Engine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

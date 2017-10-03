@@ -6,3 +6,4 @@
 #import "HelloTriangleColorEngineWrapper.h"
 #import "HelloTriangleAdvanceColorEngineWrapper.h"
 #import "HelloTriangleAdvanceColor_MapBuffers_EngineWrapper.h"
+#import "HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.h"

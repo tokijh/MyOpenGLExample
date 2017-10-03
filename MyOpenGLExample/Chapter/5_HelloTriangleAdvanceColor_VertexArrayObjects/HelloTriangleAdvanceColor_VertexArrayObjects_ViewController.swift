@@ -1,5 +1,5 @@
 //
-//  HelloTriangleAdvanceColor_MapBuffers_ViewController.swift
+//  HelloTriangleAdvanceColor_VertexArrayObjects_ViewController.swift
 //  MyOpenGLExample
 //
 //  Created by 윤중현 on 2017. 10. 2..
@@ -8,12 +8,12 @@
 
 import GLKit
 
-class HelloTriangleAdvanceColor_MapBuffers_ViewController: GLKViewController {
+class HelloTriangleAdvanceColor_VertexArrayObjects_ViewController: GLKViewController {
 
     var glkView: GLKView!
     var context: EAGLContext!
     
-    var engine: HelloTriangleAdvanceColor_MapBuffers_EngineWrapper!
+    var engine: HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper!
     
     var isCreated: Bool = false
     
@@ -25,7 +25,7 @@ class HelloTriangleAdvanceColor_MapBuffers_ViewController: GLKViewController {
             return
         }
         
-        engine = HelloTriangleAdvanceColor_MapBuffers_EngineWrapper()
+        engine = HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper()
         
         initView()
     }
