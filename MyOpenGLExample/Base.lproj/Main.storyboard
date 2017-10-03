@@ -21,33 +21,34 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChapterCell" id="Hbb-6a-M0z" customClass="ChapterTableViewCell" customModule="MyOpenGLExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChapterCell" rowHeight="103" id="Hbb-6a-M0z" customClass="ChapterTableViewCell" customModule="MyOpenGLExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hbb-6a-M0z" id="cSR-Bu-Cr8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cht-A4-Hjf">
-                                                    <rect key="frame" x="14" y="14" width="40.5" height="15.5"/>
+                                                    <rect key="frame" x="14" y="14" width="40.5" height="23"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sub title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u98-Ed-4iI">
-                                                    <rect key="frame" x="68.5" y="11" width="62" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sub title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u98-Ed-4iI">
+                                                    <rect key="frame" x="14" y="48" width="62" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u98-Ed-4iI" secondAttribute="bottom" constant="11" id="3Np-VM-yLO"/>
                                                 <constraint firstItem="Cht-A4-Hjf" firstAttribute="leading" secondItem="cSR-Bu-Cr8" secondAttribute="leading" constant="14" id="5JV-g1-WzT"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u98-Ed-4iI" secondAttribute="trailing" constant="14" id="BAD-6T-uKj"/>
                                                 <constraint firstItem="Cht-A4-Hjf" firstAttribute="top" secondItem="cSR-Bu-Cr8" secondAttribute="top" constant="14" id="QgE-KX-xtm"/>
-                                                <constraint firstItem="u98-Ed-4iI" firstAttribute="centerY" secondItem="Cht-A4-Hjf" secondAttribute="centerY" id="dii-MN-vHS"/>
-                                                <constraint firstAttribute="bottom" secondItem="Cht-A4-Hjf" secondAttribute="bottom" constant="14" id="ifb-Kl-nn8"/>
-                                                <constraint firstItem="u98-Ed-4iI" firstAttribute="leading" secondItem="Cht-A4-Hjf" secondAttribute="trailing" constant="14" id="jwg-t7-W5r"/>
+                                                <constraint firstItem="u98-Ed-4iI" firstAttribute="leading" secondItem="Cht-A4-Hjf" secondAttribute="leading" id="QrW-MP-ARe"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cht-A4-Hjf" secondAttribute="trailing" constant="20" symbolic="YES" id="wvP-iv-nKM"/>
+                                                <constraint firstItem="u98-Ed-4iI" firstAttribute="top" secondItem="Cht-A4-Hjf" secondAttribute="bottom" constant="11" id="ygh-IU-dsO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
