@@ -38,19 +38,14 @@ void HelloTriangleEngine::onChanged(int width, int height) {
 }
 
 void HelloTriangleEngine::onDraw() {
-    GLfloat vVertices[] = {  0.0f,  0.5f, 0.0f,
+    GLfloat vVertices[] = {
+        0.0f,  0.5f, 0.0f,
         -0.5f, -0.5f, 0.0f,
         0.5f, -0.5f, 0.0f
     };
     
-    // Set the viewport
-    glViewport(0, 0, width, height);
-    
     // Clear the color buffer
     glClear(GL_COLOR_BUFFER_BIT);
-    
-    // Use the program object
-    glUseProgram(HelloTriangleGLES::program);
     
     // Load the vertex data
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);

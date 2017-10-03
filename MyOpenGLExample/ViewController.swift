@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let chapterList: [Chapter] = [Chapter(title: "Chapter1", subTitle: "HelloTriangle", storyBoardName: "HelloTriangle")]
+    let chapterList: [Chapter] = [
+        Chapter(title: "Chapter1", subTitle: "HelloTriangle", storyBoardName: "HelloTriangle"),
+        Chapter(title: "Chapter2", subTitle: "HelloTriangleColor", storyBoardName: "HelloTriangleColor")
+    ]
     
 }
 
@@ -37,7 +40,6 @@ extension ViewController: UITableViewDelegate {
         guard let viewController = storyboard.instantiateInitialViewController() else {
             return
         }
-//        self.present(viewController, animated: true)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

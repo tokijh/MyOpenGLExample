@@ -3,3 +3,4 @@
 //
 
 #import "HelloTriangleEngineWrapper.h"
+#import "HelloTriangleColorEngineWrapper.h"

@@ -1,21 +1,21 @@
 //
-//  HelloTriangleGLES.cpp
+//  HelloTriangleColorGLES.cpp
 //  MyOpenGLExample
 //
 //  Created by 윤중현 on 2017. 10. 3..
 //  Copyright © 2017년 윤중현. All rights reserved.
 //
 
-#include "HelloTriangleGLES.hpp"
+#include "HelloTriangleColorGLES.hpp"
 
-string HelloTriangleGLES::VERTEX_SHADER_NAME = "HelloTriangle.vs";
-string HelloTriangleGLES::FRAGMENT_SHADER_NAME = "HelloTriangle.fs";
+string HelloTriangleColorGLES::VERTEX_SHADER_NAME = "HelloTriangleColor.vs";
+string HelloTriangleColorGLES::FRAGMENT_SHADER_NAME = "HelloTriangleColor.fs";
 
-GLuint HelloTriangleGLES::program = 0;
+GLuint HelloTriangleColorGLES::program = 0;
 
-void HelloTriangleGLES::makeProgram() {
-    int vertexShader = loadShader(GL_VERTEX_SHADER, DataManager::getInstance().get(HelloTriangleGLES::VERTEX_SHADER_NAME).c_str());
-    int fragmentShader = loadShader(GL_FRAGMENT_SHADER, DataManager::getInstance().get(HelloTriangleGLES::FRAGMENT_SHADER_NAME).c_str());
+void HelloTriangleColorGLES::makeProgram() {
+    int vertexShader = loadShader(GL_VERTEX_SHADER, DataManager::getInstance().get(HelloTriangleColorGLES::VERTEX_SHADER_NAME).c_str());
+    int fragmentShader = loadShader(GL_FRAGMENT_SHADER, DataManager::getInstance().get(HelloTriangleColorGLES::FRAGMENT_SHADER_NAME).c_str());
     
     program = glCreateProgram();
     glAttachShader(program, vertexShader);
@@ -27,7 +27,7 @@ void HelloTriangleGLES::makeProgram() {
     glDeleteProgram(program);
 }
 
-GLuint HelloTriangleGLES::loadShader(GLenum shaderType, const char *pSource) {
+GLuint HelloTriangleColorGLES::loadShader(GLenum shaderType, const char *pSource) {
     GLuint shader = glCreateShader(shaderType);
     if (shader) {
         glShaderSource(shader, 1, &pSource, NULL);
