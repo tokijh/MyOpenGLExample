@@ -15,9 +15,7 @@ GLuint HelloTriangleGLES::program = 0;
 
 void HelloTriangleGLES::makeProgram() {
     int vertexShader = loadShader(GL_VERTEX_SHADER, DataManager::getInstance().get(HelloTriangleGLES::VERTEX_SHADER_NAME).c_str());
-    printf("%s", DataManager::getInstance().get(HelloTriangleGLES::VERTEX_SHADER_NAME).c_str());
     int fragmentShader = loadShader(GL_FRAGMENT_SHADER, DataManager::getInstance().get(HelloTriangleGLES::FRAGMENT_SHADER_NAME).c_str());
-    printf("%s", DataManager::getInstance().get(HelloTriangleGLES::FRAGMENT_SHADER_NAME).c_str());
     
     program = glCreateProgram();
     glAttachShader(program, vertexShader);
