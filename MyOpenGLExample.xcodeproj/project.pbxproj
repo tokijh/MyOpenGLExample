@@ -68,6 +68,15 @@
 		601A90D61F83E7F7004718D8 /* InstancingCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601A90D41F83E7F7004718D8 /* InstancingCube.cpp */; };
 		60F82D461F83F52A0059DBEC /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D441F83F52A0059DBEC /* Matrix.cpp */; };
 		60F82D4A1F83FBB10059DBEC /* InstancingMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D481F83FBB10059DBEC /* InstancingMatrix.cpp */; };
+		60F82D7E1F84AF280059DBEC /* Simple_VertexShader_Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D6C1F84AF280059DBEC /* Simple_VertexShader_Cube.cpp */; };
+		60F82D7F1F84AF280059DBEC /* Simple_VertexShader.fs in Resources */ = {isa = PBXBuildFile; fileRef = 60F82D6F1F84AF280059DBEC /* Simple_VertexShader.fs */; };
+		60F82D801F84AF280059DBEC /* Simple_VertexShader.vs in Resources */ = {isa = PBXBuildFile; fileRef = 60F82D701F84AF280059DBEC /* Simple_VertexShader.vs */; };
+		60F82D811F84AF280059DBEC /* Simple_VertexShader_Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D711F84AF280059DBEC /* Simple_VertexShader_Engine.cpp */; };
+		60F82D821F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D741F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.mm */; };
+		60F82D831F84AF280059DBEC /* Simple_VertexShader_GLES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D771F84AF280059DBEC /* Simple_VertexShader_GLES.cpp */; };
+		60F82D841F84AF280059DBEC /* Simple_VertexShader_Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D7A1F84AF280059DBEC /* Simple_VertexShader_Matrix.cpp */; };
+		60F82D851F84AF280059DBEC /* Simple_VertexShader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F82D7C1F84AF280059DBEC /* Simple_VertexShader.storyboard */; };
+		60F82D861F84AF280059DBEC /* Simple_VertexShader_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F82D7D1F84AF280059DBEC /* Simple_VertexShader_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +171,20 @@
 		60F82D451F83F52A0059DBEC /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		60F82D481F83FBB10059DBEC /* InstancingMatrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InstancingMatrix.cpp; sourceTree = "<group>"; };
 		60F82D491F83FBB10059DBEC /* InstancingMatrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InstancingMatrix.hpp; sourceTree = "<group>"; };
+		60F82D6C1F84AF280059DBEC /* Simple_VertexShader_Cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Simple_VertexShader_Cube.cpp; sourceTree = "<group>"; };
+		60F82D6D1F84AF280059DBEC /* Simple_VertexShader_Cube.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Simple_VertexShader_Cube.hpp; sourceTree = "<group>"; };
+		60F82D6F1F84AF280059DBEC /* Simple_VertexShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple_VertexShader.fs; sourceTree = "<group>"; };
+		60F82D701F84AF280059DBEC /* Simple_VertexShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple_VertexShader.vs; sourceTree = "<group>"; };
+		60F82D711F84AF280059DBEC /* Simple_VertexShader_Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Simple_VertexShader_Engine.cpp; sourceTree = "<group>"; };
+		60F82D721F84AF280059DBEC /* Simple_VertexShader_Engine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Simple_VertexShader_Engine.hpp; sourceTree = "<group>"; };
+		60F82D731F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simple_VertexShader_EngineWrapper.h; sourceTree = "<group>"; };
+		60F82D741F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Simple_VertexShader_EngineWrapper.mm; sourceTree = "<group>"; };
+		60F82D771F84AF280059DBEC /* Simple_VertexShader_GLES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Simple_VertexShader_GLES.cpp; sourceTree = "<group>"; };
+		60F82D781F84AF280059DBEC /* Simple_VertexShader_GLES.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Simple_VertexShader_GLES.hpp; sourceTree = "<group>"; };
+		60F82D7A1F84AF280059DBEC /* Simple_VertexShader_Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Simple_VertexShader_Matrix.cpp; sourceTree = "<group>"; };
+		60F82D7B1F84AF280059DBEC /* Simple_VertexShader_Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Simple_VertexShader_Matrix.hpp; sourceTree = "<group>"; };
+		60F82D7C1F84AF280059DBEC /* Simple_VertexShader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Simple_VertexShader.storyboard; sourceTree = "<group>"; };
+		60F82D7D1F84AF280059DBEC /* Simple_VertexShader_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simple_VertexShader_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +243,7 @@
 				601A90911F83D68C004718D8 /* 5_HelloTriangleAdvanceColor_VertexArrayObjects */,
 				601A90A71F83DD87004718D8 /* 6_HelloTriangleAdvanceColor_VertexBufferObjects */,
 				601A90BD1F83E64E004718D8 /* 7_Instancing */,
+				60F82D691F84AF280059DBEC /* 8_Simple_VertexShader */,
 			);
 			path = Chapter;
 			sourceTree = "<group>";
@@ -641,6 +665,75 @@
 			path = InstancingMatrix;
 			sourceTree = "<group>";
 		};
+		60F82D691F84AF280059DBEC /* 8_Simple_VertexShader */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D6A1F84AF280059DBEC /* Engine */,
+				60F82D7C1F84AF280059DBEC /* Simple_VertexShader.storyboard */,
+				60F82D7D1F84AF280059DBEC /* Simple_VertexShader_ViewController.swift */,
+			);
+			path = 8_Simple_VertexShader;
+			sourceTree = "<group>";
+		};
+		60F82D6A1F84AF280059DBEC /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D6B1F84AF280059DBEC /* Object */,
+				60F82D6E1F84AF280059DBEC /* Shader */,
+				60F82D751F84AF280059DBEC /* Util */,
+				60F82D711F84AF280059DBEC /* Simple_VertexShader_Engine.cpp */,
+				60F82D721F84AF280059DBEC /* Simple_VertexShader_Engine.hpp */,
+				60F82D731F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.h */,
+				60F82D741F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.mm */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		60F82D6B1F84AF280059DBEC /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D6C1F84AF280059DBEC /* Simple_VertexShader_Cube.cpp */,
+				60F82D6D1F84AF280059DBEC /* Simple_VertexShader_Cube.hpp */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		60F82D6E1F84AF280059DBEC /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D6F1F84AF280059DBEC /* Simple_VertexShader.fs */,
+				60F82D701F84AF280059DBEC /* Simple_VertexShader.vs */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		60F82D751F84AF280059DBEC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D761F84AF280059DBEC /* GLES */,
+				60F82D791F84AF280059DBEC /* InstancingMatrix */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		60F82D761F84AF280059DBEC /* GLES */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D771F84AF280059DBEC /* Simple_VertexShader_GLES.cpp */,
+				60F82D781F84AF280059DBEC /* Simple_VertexShader_GLES.hpp */,
+			);
+			path = GLES;
+			sourceTree = "<group>";
+		};
+		60F82D791F84AF280059DBEC /* InstancingMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				60F82D7A1F84AF280059DBEC /* Simple_VertexShader_Matrix.cpp */,
+				60F82D7B1F84AF280059DBEC /* Simple_VertexShader_Matrix.hpp */,
+			);
+			path = InstancingMatrix;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -708,6 +801,7 @@
 				600057661F8168FC00A1421A /* LaunchScreen.storyboard in Resources */,
 				601A90A21F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.fs in Resources */,
 				601A90BB1F83DD87004718D8 /* HelloTriangleAdvanceColor_VertexBufferObjects.storyboard in Resources */,
+				60F82D801F84AF280059DBEC /* Simple_VertexShader.vs in Resources */,
 				600057CD1F83B41F00A1421A /* HelloTriangleColor.storyboard in Resources */,
 				601A90771F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.vs in Resources */,
 				601A90A31F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.vs in Resources */,
@@ -717,6 +811,7 @@
 				600057DF1F83B57300A1421A /* HelloTriangleColor.fs in Resources */,
 				601A90CF1F83E64F004718D8 /* Instancing.vs in Resources */,
 				601A90B81F83DD87004718D8 /* HelloTriangleAdvanceColor_VertexBufferObjects.fs in Resources */,
+				60F82D851F84AF280059DBEC /* Simple_VertexShader.storyboard in Resources */,
 				601A90791F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.storyboard in Resources */,
 				600057611F8168FC00A1421A /* Main.storyboard in Resources */,
 				601A90761F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers.fs in Resources */,
@@ -725,6 +820,7 @@
 				600057AE1F83AB0900A1421A /* HelloTriangle.fs in Resources */,
 				600057F51F83BAD600A1421A /* HelloTriangleAdvanceColor.vs in Resources */,
 				601A90A51F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects.storyboard in Resources */,
+				60F82D7F1F84AF280059DBEC /* Simple_VertexShader.fs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,7 +832,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				601A90D61F83E7F7004718D8 /* InstancingCube.cpp in Sources */,
+				60F82D821F84AF280059DBEC /* Simple_VertexShader_EngineWrapper.mm in Sources */,
 				6000575E1F8168FC00A1421A /* ViewController.swift in Sources */,
+				60F82D811F84AF280059DBEC /* Simple_VertexShader_Engine.cpp in Sources */,
 				600057961F839D5A00A1421A /* HelloTriangleEngineWrapper.mm in Sources */,
 				600057EF1F83BAC500A1421A /* HelloTriangleAdvanceColorEngineWrapper.mm in Sources */,
 				600057F21F83BAD000A1421A /* HelloTriangleAdvanceColorGLES.cpp in Sources */,
@@ -744,17 +842,21 @@
 				601A90BA1F83DD87004718D8 /* HelloTriangleAdvanceColor_VertexBufferObjects_GLES.cpp in Sources */,
 				601A90A41F83D68C004718D8 /* HelloTriangleAdvanceColor_VertexArrayObjects_GLES.cpp in Sources */,
 				600057DC1F83B4C200A1421A /* HelloTriangleColorGLES.cpp in Sources */,
+				60F82D841F84AF280059DBEC /* Simple_VertexShader_Matrix.cpp in Sources */,
 				600057991F839EE700A1421A /* HelloTriangleEngine.cpp in Sources */,
 				6000575C1F8168FC00A1421A /* AppDelegate.swift in Sources */,
+				60F82D831F84AF280059DBEC /* Simple_VertexShader_GLES.cpp in Sources */,
 				600057701F816A8E00A1421A /* ChapterTableViewCell.swift in Sources */,
 				601A90B61F83DD87004718D8 /* HelloTriangleAdvanceColor_VertexBufferObjects_Engine.cpp in Sources */,
 				601A907A1F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_ViewController.swift in Sources */,
 				60F82D461F83F52A0059DBEC /* Matrix.cpp in Sources */,
 				601A90B71F83DD87004718D8 /* HelloTriangleAdvanceColor_VertexBufferObjects_EngineWrapper.mm in Sources */,
 				601A90751F83CC4A004718D8 /* HelloTriangleAdvanceColor_MapBuffers_EngineWrapper.mm in Sources */,
+				60F82D861F84AF280059DBEC /* Simple_VertexShader_ViewController.swift in Sources */,
 				600057A31F83A8BA00A1421A /* DataManager.cpp in Sources */,
 				601A90CD1F83E64F004718D8 /* InstancingEngineWrapper.mm in Sources */,
 				600057D61F83B49100A1421A /* HelloTriangleColorEngineWrapper.mm in Sources */,
+				60F82D7E1F84AF280059DBEC /* Simple_VertexShader_Cube.cpp in Sources */,
 				60F82D4A1F83FBB10059DBEC /* InstancingMatrix.cpp in Sources */,
 				600057741F816CE800A1421A /* HelloTriangleViewController.swift in Sources */,
 				600057A71F83A8DF00A1421A /* AssetsManager.mm in Sources */,

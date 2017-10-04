@@ -1,23 +1,23 @@
 //
-//  InstancingMatrix.cpp
+//  Simple_VertexShader_Matrix.cpp
 //  MyOpenGLExample
 //
 //  Created by 윤중현 on 2017. 10. 4..
 //  Copyright © 2017년 윤중현. All rights reserved.
 //
 
-#include "InstancingMatrix.hpp"
+#include "Simple_VertexShader_Matrix.hpp"
 
-void matrixLoadIdentity(InstancingMatrix *result)
+void matrixLoadIdentity(Simple_VertexShader_Matrix *result)
 {
-    memset(result, 0x0, sizeof(InstancingMatrix));
+    memset(result, 0x0, sizeof(Simple_VertexShader_Matrix));
     result->m[0][0] = 1.0f;
     result->m[1][1] = 1.0f;
     result->m[2][2] = 1.0f;
     result->m[3][3] = 1.0f;
 }
 
-void matrixPerspective(InstancingMatrix *result, float fovy, float aspect, float nearZ, float farZ)
+void matrixPerspective(Simple_VertexShader_Matrix *result, float fovy, float aspect, float nearZ, float farZ)
 {
     GLfloat frustumW, frustumH;
     
@@ -27,12 +27,12 @@ void matrixPerspective(InstancingMatrix *result, float fovy, float aspect, float
     matrixFrustum(result, -frustumW, frustumW, -frustumH, frustumH, nearZ, farZ);
 }
 
-void matrixFrustum(InstancingMatrix *result, float left, float right, float bottom, float top, float nearZ, float farZ)
+void matrixFrustum(Simple_VertexShader_Matrix *result, float left, float right, float bottom, float top, float nearZ, float farZ)
 {
     float deltaX = right - left;
     float deltaY = top - bottom;
     float deltaZ = farZ - nearZ;
-    InstancingMatrix frust;
+    Simple_VertexShader_Matrix frust;
     
     if ((nearZ <= 0.0f) || (farZ <= 0.0f) || (deltaX <= 0.0f) || (deltaY <= 0.0f) || (deltaZ <= 0.0f))
     {
@@ -56,9 +56,9 @@ void matrixFrustum(InstancingMatrix *result, float left, float right, float bott
     matrixMultiply(result, &frust, result);
 }
 
-void matrixMultiply(InstancingMatrix *result, InstancingMatrix *srcA, InstancingMatrix *srcB)
+void matrixMultiply(Simple_VertexShader_Matrix *result, Simple_VertexShader_Matrix *srcA, Simple_VertexShader_Matrix *srcB)
 {
-    InstancingMatrix tmp;
+    Simple_VertexShader_Matrix tmp;
     int i;
     
     for (i = 0; i < 4; i++)
@@ -84,10 +84,10 @@ void matrixMultiply(InstancingMatrix *result, InstancingMatrix *srcA, Instancing
         (srcA->m[i][3] * srcB->m[3][3]) ;
     }
     
-    memcpy(result, &tmp, sizeof(InstancingMatrix));
+    memcpy(result, &tmp, sizeof(Simple_VertexShader_Matrix));
 }
 
-void matrixTranslate(InstancingMatrix *result, GLfloat tx, GLfloat ty, GLfloat tz)
+void matrixTranslate(Simple_VertexShader_Matrix *result, GLfloat tx, GLfloat ty, GLfloat tz)
 {
     result->m[3][0] += (result->m[0][0] * tx + result->m[1][0] * ty + result->m[2][0] * tz);
     result->m[3][1] += (result->m[0][1] * tx + result->m[1][1] * ty + result->m[2][1] * tz);
@@ -95,7 +95,7 @@ void matrixTranslate(InstancingMatrix *result, GLfloat tx, GLfloat ty, GLfloat t
     result->m[3][3] += (result->m[0][3] * tx + result->m[1][3] * ty + result->m[2][3] * tz);
 }
 
-void matrixRotate(InstancingMatrix *result, GLfloat angle, GLfloat x, GLfloat y, GLfloat z)
+void matrixRotate(Simple_VertexShader_Matrix *result, GLfloat angle, GLfloat x, GLfloat y, GLfloat z)
 {
     GLfloat sinAngle, cosAngle;
     GLfloat mag = sqrtf(x * x + y * y + z * z);
@@ -107,7 +107,7 @@ void matrixRotate(InstancingMatrix *result, GLfloat angle, GLfloat x, GLfloat y,
     {
         GLfloat xx, yy, zz, xy, yz, zx, xs, ys, zs;
         GLfloat oneMinusCos;
-        InstancingMatrix rotMat;
+        Simple_VertexShader_Matrix rotMat;
         
         x /= mag;
         y /= mag;

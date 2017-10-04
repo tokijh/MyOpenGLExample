@@ -66,7 +66,7 @@ void InstancingEngine::onCreate() {
         
         glGenBuffers(1, &mvpVBO);
         glBindBuffer(GL_ARRAY_BUFFER, mvpVBO);
-        glBufferData(GL_ARRAY_BUFFER, NUM_INSTANCES * sizeof(Matrix), NULL, GL_DYNAMIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER, NUM_INSTANCES * sizeof(InstancingMatrix), NULL, GL_DYNAMIC_DRAW);
     }
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     
@@ -100,8 +100,8 @@ void InstancingEngine::onChanged(int width, int height) {
 
 void InstancingEngine::onUpdate(float deltaTime) {
 
-    Matrix *matrixBuf;
-    Matrix perspective;
+    InstancingMatrix *matrixBuf;
+    InstancingMatrix perspective;
     float aspect;
     int instance = 0;
     int numRows;
@@ -116,7 +116,7 @@ void InstancingEngine::onUpdate(float deltaTime) {
     matrixPerspective(&perspective, 60.0f, aspect, 1.0f, 20.0f);
 
     glBindBuffer(GL_ARRAY_BUFFER, mvpVBO);
-    matrixBuf = (Matrix *) glMapBufferRange(GL_ARRAY_BUFFER, 0, sizeof(Matrix) * NUM_INSTANCES, GL_MAP_WRITE_BIT);
+    matrixBuf = (InstancingMatrix *) glMapBufferRange(GL_ARRAY_BUFFER, 0, sizeof(InstancingMatrix) * NUM_INSTANCES, GL_MAP_WRITE_BIT);
 
     // Compute a per-instance MVP that translates and rotates each instance differnetly
     numRows = (int) sqrtf(NUM_INSTANCES);
@@ -124,7 +124,7 @@ void InstancingEngine::onUpdate(float deltaTime) {
 
     for (instance = 0; instance < NUM_INSTANCES; instance++)
     {
-        Matrix modelview;
+        InstancingMatrix modelview;
         float translateX = ((float) (instance % numRows) / (float) numRows) * 2.0f - 1.0f;
         float translateY = ((float) (instance / numColumns) / (float) numColumns) * 2.0f - 1.0f;
 
@@ -177,10 +177,10 @@ void InstancingEngine::onDraw() {
     glBindBuffer(GL_ARRAY_BUFFER, mvpVBO);
     
     // Load each matrix row of the MVP.  Each row gets an increasing attribute location.
-    glVertexAttribPointer(MVP_LOC + 0, 4, GL_FLOAT, GL_FALSE, sizeof(Matrix), (const void *) NULL);
-    glVertexAttribPointer(MVP_LOC + 1, 4, GL_FLOAT, GL_FALSE, sizeof(Matrix), (const void *) (sizeof(GLfloat) * 4 ));
-    glVertexAttribPointer(MVP_LOC + 2, 4, GL_FLOAT, GL_FALSE, sizeof(Matrix), (const void *) (sizeof (GLfloat) * 8));
-    glVertexAttribPointer(MVP_LOC + 3, 4, GL_FLOAT, GL_FALSE, sizeof(Matrix), (const void *) (sizeof(GLfloat) * 12));
+    glVertexAttribPointer(MVP_LOC + 0, 4, GL_FLOAT, GL_FALSE, sizeof(InstancingMatrix), (const void *) NULL);
+    glVertexAttribPointer(MVP_LOC + 1, 4, GL_FLOAT, GL_FALSE, sizeof(InstancingMatrix), (const void *) (sizeof(GLfloat) * 4 ));
+    glVertexAttribPointer(MVP_LOC + 2, 4, GL_FLOAT, GL_FALSE, sizeof(InstancingMatrix), (const void *) (sizeof (GLfloat) * 8));
+    glVertexAttribPointer(MVP_LOC + 3, 4, GL_FLOAT, GL_FALSE, sizeof(InstancingMatrix), (const void *) (sizeof(GLfloat) * 12));
     glEnableVertexAttribArray(MVP_LOC + 0);
     glEnableVertexAttribArray(MVP_LOC + 1);
     glEnableVertexAttribArray(MVP_LOC + 2);

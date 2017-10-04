@@ -23,13 +23,13 @@
 typedef struct
 {
     GLfloat m[4][4];
-} Matrix;
+} InstancingMatrix;
 
-void matrixLoadIdentity(Matrix *result);
-void matrixPerspective(Matrix *result, float fovy, float aspect, float nearZ, float farZ);
-void matrixFrustum(Matrix *result, float left, float right, float bottom, float top, float nearZ, float farZ);
-void matrixMultiply(Matrix *result, Matrix *srcA, Matrix *srcB);
-void matrixTranslate(Matrix *result, GLfloat tx, GLfloat ty, GLfloat tz);
-void matrixRotate(Matrix *result, GLfloat angle, GLfloat x, GLfloat y, GLfloat z);
+void matrixLoadIdentity(InstancingMatrix *result);
+void matrixPerspective(InstancingMatrix *result, float fovy, float aspect, float nearZ, float farZ);
+void matrixFrustum(InstancingMatrix *result, float left, float right, float bottom, float top, float nearZ, float farZ);
+void matrixMultiply(InstancingMatrix *result, InstancingMatrix *srcA, InstancingMatrix *srcB);
+void matrixTranslate(InstancingMatrix *result, GLfloat tx, GLfloat ty, GLfloat tz);
+void matrixRotate(InstancingMatrix *result, GLfloat angle, GLfloat x, GLfloat y, GLfloat z);
 
 #endif /* InstancingMatrix_hpp */

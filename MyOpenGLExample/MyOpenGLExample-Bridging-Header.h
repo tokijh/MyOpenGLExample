@@ -9,3 +9,4 @@
 #import "HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.h"
 #import "HelloTriangleAdvanceColor_VertexBufferObjects_EngineWrapper.h"
 #import "InstancingEngineWrapper.h"
+#import "Simple_VertexShader_EngineWrapper.h"
