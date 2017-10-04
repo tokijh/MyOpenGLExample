@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         Chapter(title: "Chapter3", subTitle: "HelloTriangleAdvanceColor", storyBoardName: "HelloTriangleAdvanceColor"),
         Chapter(title: "Chapter4", subTitle: "HelloTriangleAdvanceColor - MapBuffers", storyBoardName: "HelloTriangleAdvanceColor_MapBuffers"),
         Chapter(title: "Chapter5", subTitle: "HelloTriangleAdvanceColor - VertexArrayObjects", storyBoardName: "HelloTriangleAdvanceColor_VertexArrayObjects"),
-        Chapter(title: "Chapter6", subTitle: "HelloTriangleAdvanceColor - VertexBufferObjects", storyBoardName: "HelloTriangleAdvanceColor_VertexBufferObjects")
+        Chapter(title: "Chapter6", subTitle: "HelloTriangleAdvanceColor - VertexBufferObjects", storyBoardName: "HelloTriangleAdvanceColor_VertexBufferObjects"),
+        Chapter(title: "Chapter7", subTitle: "Instancing", storyBoardName: "Instancing")
     ]
     
 }
