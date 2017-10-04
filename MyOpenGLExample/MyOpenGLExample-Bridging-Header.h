@@ -8,3 +8,4 @@
 #import "HelloTriangleAdvanceColor_MapBuffers_EngineWrapper.h"
 #import "HelloTriangleAdvanceColor_VertexArrayObjects_EngineWrapper.h"
 #import "HelloTriangleAdvanceColor_VertexBufferObjects_EngineWrapper.h"
+#import "InstancingEngineWrapper.h"
